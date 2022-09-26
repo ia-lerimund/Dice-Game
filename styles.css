@@ -1,0 +1,110 @@
+@font-face {
+	font-family: "Creepy Font";
+	src: url("font/Creepster-Regular.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url(images/dice.jpg);
+	font-family: "Roboto", sans-serif;
+	background-size: cover;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.who-starts,
+.container {
+	width: 30em;
+	text-align: center;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.932);
+	border-radius: 10px;
+	box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.75);
+	padding: 50px;
+}
+.container {
+	display: none;
+}
+#game {
+	font-size: 3em;
+	font-family: "Creepy Font", sans-serif;
+}
+.players {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.dice {
+	border-radius: 10px;
+	width: 100px;
+	height: 100px;
+	background: #8ab268;
+	color: white;
+	box-shadow: 0 0 0.5px black;
+	margin: 0 auto;
+	font-size: 80px;
+	display: block;
+	align-items: center;
+	justify-content: center;
+}
+button {
+	color: #fff;
+	background: #ed4d5a;
+	padding: 20px 30px;
+	font-size: 20px;
+	margin: 60px auto 0 auto;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.choice,
+.playersBtns {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#doubleBtn,
+#passBtn {
+	padding: 20px 15px;
+}
+button:hover {
+	box-shadow: 0 0 5px black;
+}
+#resetBtn,
+#doubleBtn,
+#passBtn {
+	display: none;
+}
+.active {
+	box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 1000px) {
+	.who-starts {
+		width: 100vh;
+		height: 45em;
+	}
+	.container {
+		width: 100vh;
+		height: 50em;
+	}
+	h1 {
+		font-size: 5rem;
+	}
+	button {
+		padding: 0.5em 1em;
+		font-size: 4rem;
+	}
+	.dice {
+		padding: 0.5em;
+	}
+	#doubleBtn,
+	#passBtn {
+		font-size: 3rem;
+		margin-top: 2em;
+	}
+}
