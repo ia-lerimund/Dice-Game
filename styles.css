@@ -67,10 +67,6 @@ button {
 	justify-content: space-between;
 	align-items: center;
 }
-#doubleBtn,
-#passBtn {
-	padding: 20px 15px;
-}
 button:hover {
 	box-shadow: 0 0 5px black;
 }
